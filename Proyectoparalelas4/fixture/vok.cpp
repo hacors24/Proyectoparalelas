@@ -1,4 +1,4 @@
-#include "ventanaok.h"
+#include "vok.h"
 #include "ui_ventanaok.h"
 
 ventanaok::ventanaok(QWidget *parent) :

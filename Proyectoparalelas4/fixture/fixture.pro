@@ -11,24 +11,20 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = fixture
 TEMPLATE = app
 
-#lalalaalallala
 SOURCES += main.cpp\
         mainwindow.cpp \
-    ventanaerror.cpp \
-    ventanaok.cpp
+    verror.cpp \
+    vok.cpp
 
 HEADERS  += mainwindow.h \
-    ventanaerror.h \
-    ventanaok.h
+    verror.h \
+    vok.h
 
 FORMS    += mainwindow.ui \
-    ventanaerror.ui \
-    ventanaok.ui
+    verror.ui \
+    vok.ui
 
-RESOURCES += \
-    imagen1.qrc \
-    imagen.qrc \
-    imagen2.qrc
+RESOURCES +=
 
 DISTFILES += \
     ../../ok.png

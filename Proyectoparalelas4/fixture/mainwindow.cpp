@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
 
-    //Creando y populando el modelo seleccionar el archivo
 
     model = new QDirModel(this);
     model->setReadOnly(false);
@@ -24,8 +23,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->treeView->setCurrentIndex(index);
     ui->treeView->resizeColumnToContents(0);
 
-
-    //Creando y populando el modelo para la seleccion de carperta al guardar
 
     model2 = new QDirModel(this);
     model2->setReadOnly(false);
@@ -48,7 +45,14 @@ MainWindow::~MainWindow()
 void MainWindow::on_btnsubir_clicked()
 {
 
-    //ventana.show();
+    //proporciona un modelo de datos para el sistema de ficheros local
+    QFileSystemModel *modeloDirectorio=new QFileSystemModel(this);
+
+    //mandadmos la direccion de la carpeta que queremos abir
+        modeloDirectorio->setRootPath("/home/");
+
+    //mandamos nuestro directorio al treeview
+        this->ui->treeView->setModel(modeloDirectorio);
 }
 
 void MainWindow::on_treeView_2_activated(const QModelIndex &)

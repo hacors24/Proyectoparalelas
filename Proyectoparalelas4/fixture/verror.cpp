@@ -1,4 +1,4 @@
-#include "ventanaerror.h"
+#include "verror.h"
 #include "ui_ventanaerror.h"
 
 ventanaerror::ventanaerror(QWidget *parent) :

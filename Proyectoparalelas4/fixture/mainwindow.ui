@@ -75,7 +75,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Elegir</string>
+      <string>Guardar </string>
      </property>
     </widget>
     <widget class="QTreeView" name="treeView">
