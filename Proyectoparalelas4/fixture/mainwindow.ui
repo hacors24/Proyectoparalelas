@@ -32,7 +32,7 @@
     <widget class="QPushButton" name="btnsubir">
      <property name="geometry">
       <rect>
-       <x>200</x>
+       <x>180</x>
        <y>130</y>
        <width>111</width>
        <height>22</height>
